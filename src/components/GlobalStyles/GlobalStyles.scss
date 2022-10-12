@@ -1,0 +1,30 @@
+@import 'normalize.css';
+
+:root {
+    --primary-background-color: #fff;
+    --primary-text-color: #222;
+
+    --height-header: 124px;
+    --height-header-topbar: 40px;
+    --height-header-menu: calc(var(--height-header) - var(--height-header-topbar));
+
+    --max-width-web: 1200px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'ProximaNova', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    overflow-y: overlay;
+}

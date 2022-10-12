@@ -1,0 +1,43 @@
+.top-bar{
+    height: var(--height-header-topbar);
+    background-color: var(--primary-text-color);
+}
+
+.content-topbar{
+    max-width: var(--max-width-web);
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.info-freeship{
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #b2b2b2;
+    margin-bottom: 0;
+}
+
+.list-action{
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: var(--height-header-topbar);
+}
+
+.list-action li:first-child .item-action {
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.item-action{
+    display: block;
+    font-size: 1.3rem;
+    height: 100%;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 0 25px;
+    color: #b2b2b2;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
