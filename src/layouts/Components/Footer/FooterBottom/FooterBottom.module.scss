@@ -1,0 +1,30 @@
+.wrapper{
+    padding-top: 100px;
+    max-width: var(--max-width-web);
+    margin: 0 auto;
+}
+
+.list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    padding-bottom: 24px;
+}
+
+.item {
+    cursor: pointer;
+}
+
+.text{
+    color: #888;
+    font-size: 1.4rem;
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+.link{
+    text-decoration: none;
+    color: #1274ff;
+}

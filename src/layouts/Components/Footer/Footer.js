@@ -1,5 +1,19 @@
+import classNames from 'classnames/bind';
+import styles from './Footer.module.scss';
+
+import FooterTop from './FooterTop';
+import FooterBottom from './FooterBottom';
+
+
+const cx = classNames.bind(styles);
+
 function Footer() {
-    return <h2>Footer</h2>;
+    return (
+        <div className={cx('wrapper-footer')}>
+            <FooterTop />
+            <FooterBottom />
+        </div>
+    );
 }
 
 export default Footer;

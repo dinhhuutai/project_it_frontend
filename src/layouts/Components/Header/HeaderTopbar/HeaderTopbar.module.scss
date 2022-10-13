@@ -40,4 +40,9 @@
     padding: 0 25px;
     color: #b2b2b2;
     border-right: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all .4s;
+
+    &:hover {
+        color: var(--primary-color-hover);
+    }
 }

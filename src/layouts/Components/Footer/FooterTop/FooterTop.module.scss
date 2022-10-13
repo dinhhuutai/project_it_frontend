@@ -1,0 +1,123 @@
+.wrapper-info {
+    max-width: var(--max-width-web) !important;
+}
+
+.title {
+    color: var(--color-white);
+    padding-bottom: 30px;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    list-style: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+    padding-bottom: 10px;
+}
+
+.item-link {
+    text-decoration: none;
+    color: #b2b2b2;
+    transition: all .4s;
+
+    &:hover {
+        color: var(--primary-color-hover);
+    }
+}
+
+.content-touch {
+    color: #b2b2b2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.list-icon{
+    padding: 22px 0 0 0;
+    display: flex;
+}
+
+.icon{
+    list-style: none;
+    color: #b2b2b2;
+    font-size: 1.8rem;
+    margin-right: 20px;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--primary-color-hover);
+    }
+}
+
+.input-wrapper{
+    position: relative;
+    border-bottom: 2px solid rgba(204,204,204, 0.1);
+    padding-bottom: 4px;
+}
+
+.input {
+    background-color: transparent;
+    width: 100%;
+    color: #b2b2b2;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+}
+
+.focus-input{
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #6774d5;
+    animation: slideOulineLeft ease .4s;
+}
+
+.input:focus ~ .focus-input{
+    animation: slideOulineRight ease .4s forwards;
+}
+
+@keyframes slideOulineRight {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes slideOulineLeft {
+    0%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+
+.btn-wrapper {
+    margin-top: 34px;
+}
+
+.btn{
+    font-size: 1.5rem;
+    min-width: 179px;
+    height: 46px;
+    text-transform: uppercase;
+    color: var(--color-white);
+    background-color: #717fe0;
+    border-radius: 23px;
+    border: none;
+    font-weight: 500;
+    transition: all .4s;
+
+    &:hover {
+        color: #717fe0;
+        background-color: var(--color-white);
+    }
+}

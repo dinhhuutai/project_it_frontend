@@ -1,0 +1,18 @@
+
+
+.item-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 16px 0;
+    transition: all .4s;
+
+    &:hover {
+        color: var(--primary-color-hover);
+    }
+}
+
+.item-link.active {
+    color: var(--primary-color-hover);
+}
